@@ -11,18 +11,18 @@
       };
     </style>
   
-    <h3>Statically-configured icon-toggles</h3>
+  <div align="center">  <h3>My Polymer Element Demo!</h3>
     
-    <icon-toggle toggle-icon="star"></icon-toggle>
-    <icon-toggle toggle-icon="star" pressed></icon-toggle>
+    <ele-toggle toggle-icon="star"></ele-toggle>
+    <ele-toggle toggle-icon="star" pressed></ele-toggle></div>
     
-    <h3>Data-bound icon-toggle</h3>
+    <h3>Change text on toggle!</h3>
 
     <!-- use a computed binding to generate the message -->
     <div><span>[[message(isFav)]]</span></div>
 
     <!-- curly brackets ({{}}} allow two-way binding --> 
-    <icon-toggle toggle-icon="favorite" pressed="{{isFav}}"></icon-toggle>
+    <ele-toggle toggle-icon="favorite" pressed="{{isFav}}"></ele-toggle>
   </template>
   
   <script>
@@ -30,9 +30,9 @@
       is: "icon-toggle-demo",
       message: function(fav) {
         if (fav) {
-          return "You really like me!";
+          return "Yessssss";
         } else {
-          return "Do you like me?";
+          return "Really?";
         }
       }
     });
